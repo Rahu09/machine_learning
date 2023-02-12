@@ -1,7 +1,7 @@
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pylab as plt
 from matplotlib import style
-style.use("fivethirtyerght")
+style.use("fivethirtyeight")
 
 
 
@@ -23,6 +23,13 @@ df4 = pd.DataFrame({"Low_Tier_HPI":[60,45,67,34], "Unemployment":[1,3,5,6]}, ind
 
 # joining them
 joined = df3.join(df4)
-print(joined)
+# print(joined)
 
-# 
+# ploting a graph using matplotlib
+df5 = pd.DataFrame({"Day":[1,2,3,4], "visitors":[200,100,230,300],"Bounce_Rate":[20,45,60,10]})
+# df5.plot()
+# plt.show()
+
+# changing coloumn header
+df5 = df5.rename(columns={"visitors":"Users"})
+print(df5)
