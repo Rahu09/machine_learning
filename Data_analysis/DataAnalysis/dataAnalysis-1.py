@@ -37,5 +37,3 @@ df5 = df5.rename(columns={"visitors":"Users"})
 # concatination of two dataframes.
 concat = pd.concat([df1,df2])
 # print(concat)
-
-# 
