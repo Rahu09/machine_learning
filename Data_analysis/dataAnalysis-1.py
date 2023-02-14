@@ -32,4 +32,10 @@ df5 = pd.DataFrame({"Day":[1,2,3,4], "visitors":[200,100,230,300],"Bounce_Rate":
 
 # changing coloumn header
 df5 = df5.rename(columns={"visitors":"Users"})
-print(df5)
+# print(df5)
+
+# concatination of two dataframes.
+concat = pd.concat([df1,df2])
+# print(concat)
+
+# 
