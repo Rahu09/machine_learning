@@ -35,5 +35,23 @@ c = np.array([(1,2),(3,4),(5,6),(7,8)])
 # print(c[0:2,1])
 
 # to get 10 no between 1 and 3
-d = np.linspace(1,3,10)
-print(d)
+# d = np.linspace(1,3,10)
+# print(d)
+
+# arthematic operation on array
+d = np.array([(1,2,3),(4,5,6)])
+e = np.array([(1,2,3),(4,5,6)])
+
+# print(d*e)
+# print(d-e)
+# print(d+e)
+# print(d/e)
+
+# stacking of array
+# vertical stack
+x = np.vstack((d,e))
+print(x)
+
+# horizontal stack
+y = np.hstack((d,e))
+print(y)

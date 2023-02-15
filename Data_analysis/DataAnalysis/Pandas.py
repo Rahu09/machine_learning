@@ -11,4 +11,3 @@ print(df)
 print("\nsliced verson of dataframe is\n")
 print(df.head(2)) #to show first two coulmns as a slice
 print(df.tail(2)) #to show the last two column as a slice
-
