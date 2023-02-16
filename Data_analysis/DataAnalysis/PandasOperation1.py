@@ -1,9 +1,30 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pylab as plt
 from matplotlib import style
+from numpy.random import randn
 style.use("fivethirtyeight")
+np.random.seed(101)
+
+XYZ_web = {'Day':[1,2,3,4,5,6], 'Visitors':[1000,700,6000,1000,400,350], 'Bounce_Rate':[20,20,23,15,10,34]}
+
+df = pd.DataFrame(XYZ_web)
+
+# showing the dataframe
+# print(df)
+
+# slicing the dataframe
+# print("\nsliced verson of dataframe is\n")
+# print(df.head(2)) #to show first two coulmns as a slice
+# print(df.tail(2)) #to show the last two column as a slice
 
 
+# assigning names to rows and coulmn
+df0 = pd.DataFrame(randn(3,3),['A','B','C'],['D','E','F'])
+# print(df0['E'])
+
+# to drop a row
+print(df0.drop('C'))
 
 #two data frames(tables)
 df1 = pd.DataFrame({"HPI":[80,90,70,60], "INT_RATE":[2,1,2,3], "IND_GDP":[50,45,45,67]}, index= [2001, 2002,2003,2004])
